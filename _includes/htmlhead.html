@@ -1,0 +1,41 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% comment %}
+<meta name="revisit-after" content="7 days" />
+<meta name="robots" content="index,follow" />
+<meta name="description" content="{{ page.description }}" />
+<meta name="keywords" content="" />
+<meta name="publisher" content="" />
+<meta name="author" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page.title }} | retrospekt.me">
+<meta property="fb:admins" content="" />
+<meta name="google-site-verification" content="" />
+<link rel="apple-touch-icon" href="{{ site.cdn }}/static/img/favicons/_apple_touch_iphone.png" />
+<link rel="apple-touch-icon" href="{{ site.cdn }}/static/img/favicons/ico_apple_touch_iphone2x.png" sizes="114x114" />
+<link rel="apple-touch-icon" href="{{ site.cdn }}/static/img/favicons/ico_apple_touch_ipad.png" sizes="72x72" />
+<link rel="apple-touch-icon" href="{{ site.cdn }}/static/img/favicons/ico_apple_touch_ipad2x.png" sizes="144x144" />
+<link rel="shortcut icon" href="{{ site.cdn }}/static/img/favicons/ico_favicon.ico" type="image/x-icon" />
+<meta name="apple-mobile-web-app-title" content="{{ site.name }}">
+<meta name="msapplication-TileImage" content="{{ site.cdn }}/static/img/favicons/ico_windows8tile.png" />
+<meta name="msapplication-TileColor" content="#CC0000" />
+<meta name="application-name" content="{{ site.name }}" />
+{% if page.layout == 'post' %}
+<meta name="og:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+{% else %}
+<meta name="og:description" content="{{ page.description }}" />
+{% endif %}
+<meta property="og:image" content="{{ page.previewImage }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta name="twitter:site" content="@m_p_pfeiffer" />
+<meta name="twitter:url" content="{{ site.url }}" />
+<meta name="twitter:title" content="{{ page.title }}" />
+{% if page.layout == 'post' %}
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+{% else %}
+<meta name="twitter:description" content="{{ page.description }}" />
+{% endif %}
+<meta name="twitter:image" content="{{ page.previewImage }}" />
+<link rel="shortcut icon" href="{{ site.cdn }}/static/img/icons/favicon.ico" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<link href="/static/css/app.css" media="screen, projection" rel="stylesheet" type="text/css" />
+{% endcomment %}
