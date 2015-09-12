@@ -1,2 +1,7 @@
-_site/
-.sass-cache/
+_site
+.sass-cache
+.idea
+node_modules
+.publish
+.DS_Store
+dist/
