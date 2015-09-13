@@ -1,0 +1,66 @@
+
+//transitions & animations
+
+$anim-duration-header: .75s;
+$anim-delay-header: 1s;
+$anim-duration-blurb: .6s;
+$anim-delay-blurb: $anim-duration-header + $anim-delay-header + .5s;
+$anim-duration-linklist: .35s;
+$anim-delay-linklist: $anim-duration-blurb + $anim-delay-blurb + .25s;
+
+.index__content__header {
+
+	opacity: 0;
+	transform: translateY(75%);
+	animation: fadeup $anim-duration-header $anim-delay-header ease-out forwards;
+}
+
+
+.index__content__blurb {
+
+	opacity: 0;
+	animation: fadeup $anim-duration-blurb $anim-delay-blurb ease-out forwards;
+}
+
+.index__content__linklist {
+
+	& li {
+
+		opacity: 0;
+		animation: fadein $anim-duration-linklist $anim-delay-linklist ease-out forwards;
+
+		&:nth-child(2) {
+
+			animation-delay: $anim-delay-linklist + $anim-duration-linklist;
+		}
+
+		&:nth-child(3) {
+
+			animation-delay: $anim-delay-linklist +  2*$anim-duration-linklist;
+		}
+	}
+
+}
+
+
+
+//keyframes
+
+@keyframes fadeup {
+	
+	0%   {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
