@@ -1,9 +1,22 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div class="blog">
+
+	<div class="blog__header" style="background-image:url({{ page.image }})">
+		
+		<div class="blog__header__content">	
+			<h2 class="h2">{{ page.title }}</h2>
+			<p class="meta">
+			by <a href="{{ page.author-url }}" target="_blank">{{ page.author }}</a>
+			on {{ page.date | date_to_string }}
+			</p>
+		</div>
+	</div>
+
+	<div class="blog__body post">
+	{{ content }}
+	</div>
+
 </div>
