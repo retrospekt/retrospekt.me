@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Welcome to my blog!</title>
+        <title>Example post title in the blog post’s header that spans over two lines </title>
         <meta name="viewport" content="width=device-width">
 
         <!-- Custom CSS -->
@@ -13,27 +13,39 @@
     </head>
     <body>
 
-        <h2>Welcome to my blog!</h2>
-<p class="meta">12 Sep 2015</p>
+        <div class="blog">
 
-<div class="post">
+	<div class="blog__header" style="background-image:url(/static/content/unsplash_4.jpg)">
+		
+		<div class="blog__header__content">	
+			<h2 class="h2">Example post title in the blog post’s header that spans over two lines </h2>
+			<p class="meta">
+			by <a href="http://retrospekt.me/" target="_blank">Polly Hristova</a>
+			on 12 Sep 2015
+			</p>
+		</div>
+	</div>
+
+	<div class="blog__body post">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur leo metus, eleifend placerat nulla blandit a. Duis vitae dolor magna. Maecenas porttitor lorem quis pulvinar gravida. Integer diam quam, pretium ut mollis a, blandit eu massa. In diam est, bibendum vitae hendrerit eu, varius ac velit. Mauris in fermentum dui. Suspendisse rhoncus lacus at tristique malesuada. Sed orci lorem, congue at commodo in, luctus ac nulla. Fusce ipsum mauris, feugiat at mauris et, vestibulum viverra lacus. Praesent consequat lectus aliquet mattis porta. Maecenas condimentum diam id diam pellentesque, a molestie ligula facilisis. Mauris ultricies pulvinar nisi et fermentum.</p>
+
+<blockquote>
+<p>Compassion is an essential tech skill that needs to be taught as an integral part of tech education.</p>
+</blockquote>
+
+<p>Vestibulum dapibus nibh sed velit imperdiet aliquam. Suspendisse mollis lacus enim. Duis sed risus vestibulum, elementum risus ac, posuere tortor. Donec in nibh aliquet lorem pharetra finibus. Integer sagittis volutpat placerat. Pellentesque mattis augue metus, non efficitur nulla ornare non. Proin rhoncus sem a viverra tincidunt. Curabitur rhoncus efficitur blandit. Donec tortor quam, suscipit at finibus accumsan, condimentum eu ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus neque eu tortor finibus pharetra.</p>
+
+<h1>test h1</h1>
+
+<h2>test h2</h2>
+
+<h3>test h3</h3>
+
 <p>http://localhost:3000/blog/update/2015/09/12/welcome-to-jekyll.html</p>
 
-<p>You&#39;ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll&#39;s GitHub repo</a>.</p>
+	</div>
 
 </div>
-
 
     </body>
 </html>
