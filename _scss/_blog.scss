@@ -4,7 +4,7 @@
 .blog {
 
 	max-width: $max-width;
-	margin: 50px auto;
+	margin: 50px auto 75px;
 	font-size: $blog-fontsize;
 	line-height: $blog-lineheight;
 	color: $black;
@@ -43,7 +43,7 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background: rgba(0,0,0,.35);
+			background: rgba(0,0,0,.55);
 		}
 
 		&__content {
@@ -63,6 +63,11 @@
 			}
 		}
 
+		&__meta {
+
+			font-size: 14px;
+		}
+
 	}
 
 	&__body {
@@ -77,12 +82,49 @@
 			padding: 0 30px;
 		}
 
+		p:first-child,
+		.first-letter {
+
+			&:first-letter {
+
+				float: left;
+				margin-right: 10px;
+				font-size: 6rem;
+				line-height: 1;
+				font-weight: 600;
+
+			}
+
+		}
+
+		.divider {
+
+			height: 1px;
+			margin: 3rem 0;
+			background: lighten($black, 75%);
+		}
+
+		h3 {
+
+			margin: 2rem 0 -.35rem;
+		}
+
 		blockquote {
 
-			font-size: 2rem;
+			font-size: 1.8rem;
 			line-height: 1.75;
 			width: 90%;
-			margin: 0 auto;
+			margin: 3rem 0 3rem 5%;
+			padding-left: 5%;
+			border-left: 3px solid lighten($blue, 45%);
+
+			@include mobile {
+
+				width: 100%;
+				margin-left: 0;
+				padding-left: 0;
+				border: 0;
+			}
 
 			p {
 
@@ -95,8 +137,6 @@
 					content: "”";
 				}
 			}
-
-			
 
 		}
 	}

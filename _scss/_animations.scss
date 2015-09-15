@@ -2,11 +2,11 @@
 //transitions & animations
 
 $anim-duration-header: .75s;
-$anim-delay-header: 1s;
+$anim-delay-header: .75s;
 $anim-duration-blurb: .6s;
-$anim-delay-blurb: $anim-duration-header + $anim-delay-header + .5s;
+$anim-delay-blurb: $anim-duration-header + $anim-delay-header + .2s;
 $anim-duration-linklist: .35s;
-$anim-delay-linklist: $anim-duration-blurb + $anim-delay-blurb + .25s;
+$anim-delay-linklist: $anim-duration-blurb + $anim-delay-blurb + .2s;
 
 .index__content__header {
 
