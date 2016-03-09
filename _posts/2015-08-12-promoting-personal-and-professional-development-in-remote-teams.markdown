@@ -3,9 +3,10 @@ layout: post
 title:  "The challenges of promoting personal and professional development in remote teams"
 image: /static/content/unsplash_5.jpg
 date:   2015-08-12 09:11:03
-author: retrospekt
+author: Polly Hristova
 author-url: http://retrospekt.me/
-categories: blog
+permalink: blog/:categories/:title
+categories: learning
 ---
 
 From yoga classes and cooking lessons to language courses, educational stipends and paid sabbaticals - the promise of opportunities for personal and professional growth is now part of every top employer’s benefits package. At the same time, investing in the lifelong learning of employees has become more than just a set of cool perks used to attract great and increasingly demanding talent. In the fast-paced world of startups and tech, promoting personal and professional development within an organization is crucial to remaining successful, profitable, and most importantly, competitive.
